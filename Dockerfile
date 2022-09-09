@@ -1,4 +1,7 @@
 FROM jetbrains/teamcity-agent:2022.04.3-linux-sudo
+
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN sudo apt-get update &&  sudo apt-get install -y \
           libgtk2.0-0 \
           libgtk-3-0 \
